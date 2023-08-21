@@ -1,59 +1,31 @@
-const { Client } = require('whatsapp-web.js');
-const qrcode = require('qrcode-terminal');
-const fs = require('fs');
-const axios = require('axios');
+const { Client, LocalAuth } = require('whatsapp-web.js');
+const express = require('express');
+const bodyParser = require('body-parser');
 
-const SESSION_FILE_PATH = './session.json';
-const COMMAND_PREFIX = '!'; // Set your preferred command prefix
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-let sessionData;
+// Set up Express to parse JSON data
+app.use(bodyParser.json());
 
-if (fs.existsSync(SESSION_FILE_PATH)) {
-  sessionData = require(SESSION_FILE_PATH);
-}
-
+// Create a new WhatsApp client
 const client = new Client({
-  session: sessionData
+  auth: new LocalAuth({
+    session: require('./session.json'), // Replace with your own session data
+  }),
 });
 
-client.on('qr', (qr) => {
-  qrcode.generate(qr, { small: true });
-});
-
-client.on('authenticated', (session) => {
-  console.log('Authenticated');
-  sessionData = session;
-  fs.writeFileSync(SESSION_FILE_PATH, JSON.stringify(session));
-});
-
-client.on('message', async (msg) => {
-  const lowercaseMsg = msg.body.toLowerCase();
-
-  if (lowercaseMsg.startsWith(COMMAND_PREFIX)) {
-    const command = lowercaseMsg.slice(1); // Remove the prefix
-    
-    if (command === 'hi') {
-      msg.reply('Hello! How can I assist you today?');
-    } else if (command === 'weather') {
-      try {
-        // ... (weather API interaction, as before)
-      } catch (error) {
-        msg.reply('Sorry, I couldn\'t fetch the weather information.');
-      }
-    } else if (command === 'imagify') {
-      // Example text-to-image API interaction
-      const imageUrl = await convertTextToImage('Hello from WhatsApp Bot!');
-      msg.reply(imageUrl);
-    } else {
-      msg.reply('Unknown command. Type `' + COMMAND_PREFIX + 'help` for a list of commands.');
-    }
+// Handle incoming messages
+client.on('message', async (message) => {
+  if (message.body === '!hello') {
+    await message.reply('Hello! This is your WhatsApp bot.');
   }
 });
 
-async function convertTextToImage(text) {
-  // Replace with actual image API integration
-  // For demonstration purposes, return a placeholder URL
-  return 'https://via.placeholder.com/300';
-}
-
+// Initialize the client
 client.initialize();
+
+// Start the Express server
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
