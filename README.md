@@ -95,7 +95,7 @@ mongodb+srv://ahil1:787191784abhi@ahil1.kzr1tt3.mongodb.net/?retrywrites=true&w=
 </p>
 
 <p align="center" >
-    <a href="https://heroku.com/deploy?template=https://github.com/Bladeh4x/BLADE-MD">
+    <a href="https://heroku.com/deploy?template=https://github.com/kennyblack92/EXCEL-BOT">
     <img src="https://www.herokucdn.com/deploy/button.png" width="160px" alt="Deploy on Heroku" >
     </a>
 
@@ -156,7 +156,7 @@ mongodb+srv://ahil1:787191784abhi@ahil1.kzr1tt3.mongodb.net/?retrywrites=true&w=
 
 <br>
 
- # BLADE MD SUPPORT
+ # EXCEL BOT SUPPORT
  
  <details close>
 <summary> JOIN OUR WHATSAPP GROUP AND SUPPORT OUR YOUTUBE CHANNEL</summary>
@@ -240,10 +240,10 @@ Copy the JSON down and paste in repl then fill the vars
 ---
 <br>
 
-<h2 align="center">TEAM-BLADE
+<h2 align="center">TEAM-EXCEL🦅
 </h2>
 
-[![Bladeh4x](https://github.com/Bladeh4x.png?size=200)](https://github.com/Bladeh4x) | 
+[![EXCEL](https://github.com/kennyblack92.png?size=200)](https://github.com/kennyblack92)
  [![ahil15](https://github.com/ahil15.png?size=200)](https://github.com/ahil15) |
  [![Mulandii](https://github.com/Mulandii.png?size=200)](https://github.com/Mulandii) | 
  
@@ -255,7 +255,7 @@ Copy the JSON down and paste in repl then fill the vars
 
 SUPPORT GROUP: <a href="https://chat.whatsapp.com/ErxOiX1qQgk9phDJhnUiDQ"><img alt="WhatsApp" src="https://camo.githubusercontent.com/2157131829ac512183ee8f8b6c6f803688a4cc66a2e686602844e80478401a7c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6f696e2047726f75702d3235443336363f7374796c653d666f722d7468652d6261646765266c6f676f3d7768617473617070266c6f676f436f6c6f723d7768697465"/></a>
 
-- Star the repo IF u like BLADE
+- Star the repo IF YOU like MY BOT
 
 ## License
 
