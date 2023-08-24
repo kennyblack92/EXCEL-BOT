@@ -20,11 +20,9 @@
   </p>
   <p align="center">
     <img align="left" alt="SIEGRIN | Gmail" width="26px" src="https://raw.githubusercontent.com/PikaBotz/My_Personal_Space/main/Images/AnyaBot_pics/Anya_v2/Gmail.svg" />
-  
-    My email Adress : maxdavid126@gmail.com
      
  </p>
-  <a href="https://github.com/Bladeh4x/BLADE-MD/fork" target="blank"><img align="center" src="(https://i.imgur.com/JcO5nNc.png)" alt="Deploy bot" height="80" width="200" /></a>
+  <a href="https://github.com/kennyblack92/EXCEL-BOT/fork" target="blank"><img align="center" src="(https://i.imgur.com/JcO5nNc.png)" alt="Deploy bot" height="80" width="200" /></a>
   <div>
 <br>
 </p>
