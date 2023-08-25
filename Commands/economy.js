@@ -44,7 +44,7 @@
 	 if (daily.cd) { //cdL is already formatted cooldown Left
         return await  citel.reply(`🧧 You already claimed daily for today, come back in ${daily.cdL}🫡`)
 	 } else {
-	 citel.reply(`you claimed daily ${daily.amount} 🪙 for today🎉.`);   
+	 citel.reply(`hey you claimed daily ${daily.amount} 🪙 for today🎉.`);   
 	 }
  }
  )
@@ -54,7 +54,7 @@
          desc: "reset wallet of quoted user.",
          category: "economy",
          filename: __filename,
-         react: "💷"
+         react: "💵"
      },
      async(Void, citel, text,{ isCreator }) => {
         let zerogroup = (await sck.findOne({
@@ -70,7 +70,7 @@
 	if(!users) return citel.reply('Please give me user.')
         const balance  = await eco.balance(users, "secktor")
         await eco.deduct(users, "secktor", balance.wallet);
-        return await citel.reply(`⛩️ User: @${users.split('@')[0]} \n *🧧 @${users.split('@')[0]} lost all 🪙 in wallet.*\n_Now live with that poverty.🫡_`,{mentions:[users]})
+        return await citel.reply(`⛩️ User: @${users.split('@')[0]} \n *🧧 @${users.split('@')[0]} lost all 🪙 in wallet.*\n_Now live with poverty.🥲😂_`,{mentions:[users]})
  }
  )
     //---------------------------------------------------------------------------
@@ -123,7 +123,7 @@ return await citel.reply(`*10000000 🪙diamond storage has been added in ${cite
 
              break
 default:
- await citel.reply('*What are you trying to do📉*.')
+ await citel.reply('*HEY What are you trying to do📉*.')
 
  }
 }
@@ -151,7 +151,7 @@ default:
         let d = parseInt(text)
         const deposit = await eco.deposit(citel.sender, "secktor", d);
         const balance = await eco.balance(citel.sender, "secktor")
-        if(deposit.noten) return citel.reply('You can\'t deposit what you don\'t have💰.'); //if user states more than whats in his wallet
+        if(deposit.noten) return citel.reply('You can\'t deposit what you don\'t have🙂.'); //if user states more than whats in his wallet
 return await citel.reply(`⛩️ Sender: ${citel.pushName}\n🍀Successfully 💰Deposited 🪙${deposit.amount} to your bank.Upgrade your bank capacity to add more money📈.`)
     }
 )
@@ -201,7 +201,7 @@ async(Void, citel, text,{ isCreator }) => {
     let value = text.trim().split(" ");
     if (value[0] === "") return citel.reply(`Use ${prefix}transfer 100 @user`);
     let user = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
-    if(!user) return citel.reply('Please give me any user🤦‍♂️.');
+    if(!user) return citel.reply('Please give me any user🥷.');
     const secktor = "secktor"
         const user1 = citel.sender
         const user2 = user
@@ -212,12 +212,12 @@ async(Void, citel, text,{ isCreator }) => {
         const balance = await eco.balance(user1, secktor);
         let a = (balance.wallet) < parseInt(word)
         //Returns wallet, bank, and bankCapacity. Also creates a USer if it doesn't exist.
-        if(a == true) return citel.reply("you dont have sufficient money to transfer👎");
+        if(a == true) return citel.reply("you dont have sufficient money to transfer😪");
 
         const deduct = await eco.deduct(user1, secktor, value[0]);
         const give = await eco.give(user2, secktor, value[0]);
 
-return await citel.reply( `*📠 Transaction successful of ${value[0]} 💰*`)
+return await citel.reply( `*🧾Transaction successful of ${value[0]} 💰*`)
 
 }
 )
@@ -228,7 +228,7 @@ return await citel.reply( `*📠 Transaction successful of ${value[0]} 💰*`)
         desc: "shows wallet.",
         category: "economy",
         filename: __filename,
-        react: "💷"
+        react: "💵"
     },
     async(Void, citel, text,{ isCreator }) => {
         let zerogroup = (await sck.findOne({
@@ -313,8 +313,8 @@ return await citel.reply(`🍀User: ${citel.pushName}\n\n_🪙${balance.bank}/${
 	const balance2  = await eco.balance(user2, secktor)
 	const typ = ['ran','rob','caught'];
     const random = typ[Math.floor(Math.random() * typ.length)];
-    if (k > balance1.wallet) return citel.reply(`*☹️ You don't have enough money to pay incase you get caught*`);
-    if (k > balance2.wallet) return citel.reply(`*Sorry, your victim is too poor 🤷🏽‍♂️ let go🫤.*`);
+    if (k > balance1.wallet) return citel.reply(`*🚶🏽‍♂️ You don't have enough money to pay incase you get caught*`);
+    if (k > balance2.wallet) return citel.reply(`*Sorry, your victim is too poor 🚶🏽‍♂️ let go😪.*`);
     let tpy = random    
     switch (random) {
        
