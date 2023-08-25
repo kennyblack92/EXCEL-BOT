@@ -1,14 +1,14 @@
 {
-  "name": "BLADE-MD",
-  "description": "A Whatsapp md bot built in NodeJs to make experience better",
-  "logo": "https://telegra.ph/file/3f3ae4aace2d012c11509.jpg",
-  "keywords": ["nodejs", "bot", "whatsapp bot", "Zero-Two", "blade Bot", "blade","BLADE-MD","theme bot","multi device","baileys","alex tv"],
+  "name": "EXCEL-BOT",
+  "description": "A Whatsapp md bot built in NodeJs ",
+  "logo": "https://telegra.ph/EXCEL-BOT-08-25",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "Zero-Two", "excel Bot", "excel","EXCEL-BOT","theme bot","multi device","baileys","excel"],
   "success_url": "/",
   "stack": "container",
 "env": {
   "OWNER_NAME": {
   "description": "BOT OWNER NAME",
-      "value": "alexdavid"
+      "value": "excel"
   },
   "ALIVE_MESSAGE": {
     "description": " SET YOUR ALIVE MESSAGE FOR THE BOT",
