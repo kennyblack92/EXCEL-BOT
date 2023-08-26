@@ -1,5 +1,5 @@
 while true
 do
-echo "Starting BLADE-MD..."
+echo "Starting EXCEL-BOT..."
 node lib/client.js
 done
