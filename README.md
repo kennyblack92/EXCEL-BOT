@@ -14,7 +14,7 @@
   # ```Tap Here For Help``` 
   
   <p align="left">
-  <a href="https://wa.me/2347039570336?text=Hello%20alex~tv%20...%20I%20need%20some%20help%20with%20EXCEL%20BOT">
+  <a href="https://wa.me/2347039570336?text=Hello%20EXCEL%20...%20I%20need%20some%20help%20with%20EXCEL%20BOT">
     <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://raw.githubusercontent.com/PikaBotz/My_Personal_Space/main/Images/AnyaBot_pics/Anya_v2/Whatsapp.svg" />
   Tap here for contact me on WhatsApp Messenger 
   </p>
