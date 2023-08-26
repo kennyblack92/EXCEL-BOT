@@ -1,6 +1,6 @@
 FROM quay.io/sampandey001/secktor
-RUN git clone  https://github.com/Bladeh4x/BLADE-MD /root/Bladeh4x
-WORKDIR /root/Bladeh4x/
+RUN git clone  https://github.com/kennyblack92/EXCEL-BOT /root/kennyblack92
+WORKDIR /root/kennyblack92/
 RUN npm install npm@latest
 RUN yarn install --network-concurrency 1
 EXPOSE 8000
