@@ -5,7 +5,7 @@
     <img alt=Support height="250" src="https://i.imgur.com/JcO5nNc.png"> 
     </p>
       <div align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Impact&size=50&pause=1000&color=000000&center=true&width=910&height=100&lines=+EXCEL-BOT;MULTI+DEVICE+WHATSAPP+BOT;CREATED+BY+EXCEL;PUBLIC+RELESED+DATE;2023/08/21; THIS +BOT IS+BASED+FROM; OF SECKTOR-MD;SO FULL+SCRIPT+CREDIT+GOES+TO;TEAM SECKTOR." alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Impact&size=50&pause=1000&color=000000&center=true&width=910&height=100&lines=+EXCEL-BOT;MULTI+DEVICE+WHATSAPP+BOT;CREATED+BY+EXCEL;PUBLIC+RELESED+DATE;2023/08/26; THIS +BOT IS+BASED+FROM; OF SECKTOR-MD;SO FULL+SCRIPT+CREDIT+GOES+TO;TEAM SECKTOR." alt="Typing SVG" /></a>
   </p>
   <br>
 
